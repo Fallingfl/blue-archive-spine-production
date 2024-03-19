@@ -18,8 +18,8 @@ jobs:
           python ./py/generateModelsJson.py
       - name: Commit files
         run: |
-          git config --local user.email "ucihaibna@yahoo.com"
-          git config --local user.name "respectZ"
+          git config --local user.email "2964459358@qq.com"
+          git config --local user.name "Fallingfl"
           git add .
           git commit -m "[Update] $(cat ./data/version.txt)"
       - name: Push changes
