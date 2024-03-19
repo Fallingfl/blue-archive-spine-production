@@ -66,18 +66,18 @@
             </select>
             <p><label><input class="uk-checkbox" type="checkbox" id="optionLoop"> 动画循环</label></p>
             <p><label><input class="uk-checkbox" type="checkbox" id="optionTalkSound"> 播放音频</label></p>
-            <!-- 高级设置 -->
+            <!-- Advanced Options -->
             <ul uk-accordion>
                 <li>
-                    <a class="uk-accordion-title" href="#">Advanced Options</a>
+                    <a class="uk-accordion-title" href="#">高级设置</a>
                     <div class="uk-accordion-content">
                         <div class="uk-grid-small" uk-grid>
                             <div class="uk-width-1-1">
-                                <button class="uk-button uk-button-default" id="optionScaleFit">Fit Scale</button>
-                                <button class="uk-button uk-button-default" id="optionScaleHalf">1/2 Scale</button>
+                                <button class="uk-button uk-button-default" id="optionScaleFit">适配缩放</button>
+                                <button class="uk-button uk-button-default" id="optionScaleHalf">1/2缩放</button>
                             </div>
                             <div class="uk-width-1-4 uk-margin">
-                                <p>Size</p>
+                                <p>分辨率</p>
                             </div>
                             <div class="uk-width-3-4">
                                 <input class="uk-input" type="number" step="1" id="optionWidth">
@@ -90,11 +90,10 @@
                                 <input class="uk-input" type="number" min="0.01" step="0.01" id="optionScale">
                             </div>
                             <div class="uk-width-1-1">
-                                <p><label><input class="uk-checkbox" type="checkbox" id="optionAutoPos" checked> Auto
-                                        Centerize</label></p>
+                                <p><label><input class="uk-checkbox" type="checkbox" id="optionAutoPos" checked> 自动居中</label></p>
                             </div>
                             <div class="uk-width-1-1">
-                                <p>You can also move it by dragging.</p>
+                                <p>你也可以通过拖拽屏幕移动画面</p>
                             </div>
                             <div class="uk-width-1-4 uk-margin">
                                 <p>X</p>
@@ -115,7 +114,7 @@
             <!-- Export Animation -->
             <ul uk-accordion>
                 <li>
-                    <a class="uk-accordion-title" href="#">Export Animation</a>
+                    <a class="uk-accordion-title" href="#">导出动画</a>
                     <div class="uk-accordion-content">
                         <div class="uk-grid-small" uk-grid>
                             <div class="uk-width-1-4 uk-margin">
@@ -125,7 +124,7 @@
                                 <input class="uk-input" type="number" min="1" step="1" id="optionFPS" value="60">
                             </div>
                             <div class="uk-width-1-1">
-                                <p>File Type</p>
+                                <p>文件类型</p>
                             </div>
                             <div class="uk-width-1-1">
                                 <select class="uk-select" id="optionExportType">
