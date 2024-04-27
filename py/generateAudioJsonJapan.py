@@ -19,7 +19,7 @@ if not (os.path.isdir("./data")):
 
 if __name__ == "__main__":
     baseUrl = getBaseResourceURL() + '/MediaResources'
-    resUrl = baseUrl + '/MediaCatalog.json'
+    resUrl = baseUrl + '/MediaCatalog.bytes'
     # https://prod-clientpatch.bluearchiveyostar.com/r47_1_22_46zlzvd7mur326newgu8_2 + /MediaResources/MediaCatalog.json
     res = requests.get(resUrl).json()["Table"]
     for asset in res:
