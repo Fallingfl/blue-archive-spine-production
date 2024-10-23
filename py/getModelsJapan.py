@@ -11,7 +11,6 @@ option = {
     "skipExistingAssets": True
 }
 
-TEST_CDN = True
 
 ba_api = "https://yostar-serverinfo.bluearchiveyostar.com/r73_50_yim5nra9oql3gg50vfye.json"
 
@@ -49,11 +48,6 @@ def getModelsList():
             # append url and path
             data.append(base_url + '/Android/' + asset["Name"])
     return data
-
-    if TEST_CDN:
-       res_url = res_url.replace(
-           "prod-clientpatch.bluearchiveyostar.com", "cdntest.bluearchiveyostar.com"
-        )
 
 def downloadFile(url, fname):
     src = requests.get(url).content
