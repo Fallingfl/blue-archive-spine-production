@@ -37,7 +37,7 @@ def getBaseResourceURL():
     # https://prod-clientpatch.bluearchiveyostar.com/r47_1_22_46zlzvd7mur326newgu8_2 + /Android/bundleDownloadInfo.json
     
     if TEST_CDN:
-       getBaseResourceURL() = getBaseResourceURL().replace(
+       getBaseResourceURL = getBaseResourceURL.replace(
            "prod-clientpatch.bluearchiveyostar.com", "cdntest.bluearchiveyostar.com"
         )
 
