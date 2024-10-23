@@ -51,7 +51,7 @@ def getModelsList():
     return data
 
     if TEST_CDN:
-       base_url = base_url.replace(
+       res_url = res_url.replace(
            "prod-clientpatch.bluearchiveyostar.com", "cdntest.bluearchiveyostar.com"
         )
 
