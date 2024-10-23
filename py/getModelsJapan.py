@@ -33,6 +33,7 @@ def getBaseResourceURL():
     data = requests.get(ba_api).json()
     print(data)
     return data["ConnectionGroups"][0]['OverrideConnectionGroups'][-1]['AddressablesCatalogUrlRoot']
+    return base_url.replace("prod-clientpatch", "cdntest")
     # https://prod-clientpatch.bluearchiveyostar.com/r47_1_22_46zlzvd7mur326newgu8_2 + /Android/bundleDownloadInfo.json
 
 def getModelsList():
