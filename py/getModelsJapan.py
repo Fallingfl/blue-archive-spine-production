@@ -32,7 +32,7 @@ def getBaseResourceURL():
     '''
     data = requests.get(ba_api).json()
     print(data)
-    return data["ConnectionGroups"][0]['OverrideConnectionGroups'][-1]['AddressablesCatalogUrlRoot'].替换(
+    return data["ConnectionGroups"][0]['OverrideConnectionGroups'][-1]['AddressablesCatalogUrlRoot'].replace(
         "https://prod-clientpatch.bluearchiveyostar.com",
         "https://cdntest.bluearchiveyostar.com"
     )
