@@ -11,6 +11,8 @@ option = {
     "skipExistingAssets": True
 }
 
+TEST_CDN = True
+
 ba_api = "https://yostar-serverinfo.bluearchiveyostar.com/r73_50_yim5nra9oql3gg50vfye.json"
 
 ba_api2 = "https://prod-noticeindex.bluearchiveyostar.com/prod/index.json"
@@ -33,7 +35,11 @@ def getBaseResourceURL():
     print(data)
     return data["ConnectionGroups"][0]['OverrideConnectionGroups'][-1]['AddressablesCatalogUrlRoot']
     # https://prod-clientpatch.bluearchiveyostar.com/r47_1_22_46zlzvd7mur326newgu8_2 + /Android/bundleDownloadInfo.json
-
+    
+    if TEST_CDN:
+       base_url = base_url.replace(
+           "prod-clientpatch.bluearchiveyostar.com", "cdntest.bluearchiveyostar.com"
+        )
 
 def getModelsList():
     '''
