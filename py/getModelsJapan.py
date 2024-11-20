@@ -12,7 +12,7 @@ option = {
 }
 
 
-ba_api = "https://yostar-serverinfo.bluearchiveyostar.com/r73_50_yim5nra9oql3gg50vfye.json"
+ba_api = "https://yostar-serverinfo.bluearchiveyostar.com/r74_51_v9gr52whi1a5txd9nxjq.json"
 
 ba_api2 = "https://prod-noticeindex.bluearchiveyostar.com/prod/index.json"
 
